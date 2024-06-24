@@ -24,13 +24,13 @@ export type IFeatureFlags = z.infer<typeof FeatureFlagsSchema>;
 export const DEFAULT_FEATURE_FLAGS: IFeatureFlags = {
   webrtc_sync: false,
 
-  language_model_settings: false,
+  language_model_settings: true,
 
   openai_api_key: true,
   openai_proxy_url: true,
 
   create_session: true,
-  edit_agent: false,
+  edit_agent: true,
 
   dalle: false,
 
